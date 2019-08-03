@@ -6,18 +6,23 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2019 | FriendMing&#39;s Blog</title>
+  <title>硬件实践02A-USB小手电制作 | FriendMing&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="学习过程的记录。tags:人工智能,机器学习,数据挖掘,大数据.">
-<meta property="og:type" content="website">
-<meta property="og:title" content="FriendMing&#39;s Blog">
-<meta property="og:url" content="http://yoursite.com/archives/2019/index.html">
+  <meta name="description" content="手电是5月份开始制作的，到现在程序还没写（咕咕咕啊），所以写一篇博客，以此激励自己回头把程序写好。  前因其实纯粹是手痒，再是在于想练习练习AVR单片机程序的编写和PCB绘制。并且鉴于在学校不方便，所以也需要是一个小巧东西，所以就想做这个小手电（还可以送人~）  选型MCU选择的是ATtiny85,8脚的小单片机。其实是有现成手电控制芯片可以选择的，但是那样意义不大呀，所以还是选了单片机，主要想练">
+<meta name="keywords" content="电路">
+<meta property="og:type" content="article">
+<meta property="og:title" content="硬件实践02A-USB小手电制作">
+<meta property="og:url" content="http://yoursite.com/2019/08/03/硬件实践02A-USB小手电制作/index.html">
 <meta property="og:site_name" content="FriendMing&#39;s Blog">
-<meta property="og:description" content="学习过程的记录。tags:人工智能,机器学习,数据挖掘,大数据.">
+<meta property="og:description" content="手电是5月份开始制作的，到现在程序还没写（咕咕咕啊），所以写一篇博客，以此激励自己回头把程序写好。  前因其实纯粹是手痒，再是在于想练习练习AVR单片机程序的编写和PCB绘制。并且鉴于在学校不方便，所以也需要是一个小巧东西，所以就想做这个小手电（还可以送人~）  选型MCU选择的是ATtiny85,8脚的小单片机。其实是有现成手电控制芯片可以选择的，但是那样意义不大呀，所以还是选了单片机，主要想练">
 <meta property="og:locale" content="default">
+<meta property="og:image" content="http://yoursite.com/.com//2019-08-01A.png">
+<meta property="og:image" content="http://yoursite.com/.com//2019-08-03.png">
+<meta property="og:updated_time" content="2019-08-03T05:23:09.696Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="FriendMing&#39;s Blog">
-<meta name="twitter:description" content="学习过程的记录。tags:人工智能,机器学习,数据挖掘,大数据.">
+<meta name="twitter:title" content="硬件实践02A-USB小手电制作">
+<meta name="twitter:description" content="手电是5月份开始制作的，到现在程序还没写（咕咕咕啊），所以写一篇博客，以此激励自己回头把程序写好。  前因其实纯粹是手痒，再是在于想练习练习AVR单片机程序的编写和PCB绘制。并且鉴于在学校不方便，所以也需要是一个小巧东西，所以就想做这个小手电（还可以送人~）  选型MCU选择的是ATtiny85,8脚的小单片机。其实是有现成手电控制芯片可以选择的，但是那样意义不大呀，所以还是选了单片机，主要想练">
+<meta name="twitter:image" content="http://yoursite.com/.com//2019-08-01A.png">
   
     <link rel="alternative" href="/atom.xml" title="FriendMing&#39;s Blog" type="application/atom+xml">
   
@@ -157,36 +162,80 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-硬件实践02A-USB小手电制作" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/08/03/硬件实践02A-USB小手电制作/" class="archive-article-date">
-  	<time datetime="2019-08-03T04:54:20.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-03</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/08/03/硬件实践02A-USB小手电制作/">硬件实践02A-USB小手电制作</a>
+    <h1 class="article-title" itemprop="name">
+      硬件实践02A-USB小手电制作
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2019/08/03/硬件实践02A-USB小手电制作/" class="archive-article-date">
+  	<time datetime="2019-08-03T04:54:20.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-03</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>手电是5月份开始制作的，到现在程序还没写（咕咕咕啊），所以写一篇博客，以此激励自己回头把程序写好。</p>
+<hr>
+<h4 id="前因"><a href="#前因" class="headerlink" title="前因"></a>前因</h4><p>其实纯粹是手痒，再是在于想练习练习AVR单片机程序的编写和PCB绘制。并且鉴于在学校不方便，所以也需要是一个小巧东西，所以就想做这个小手电（还可以送人~）</p>
+<hr>
+<h4 id="选型"><a href="#选型" class="headerlink" title="选型"></a>选型</h4><p>MCU选择的是ATtiny85,8脚的小单片机。其实是有现成手电控制芯片可以选择的，但是那样意义不大呀，所以还是选了单片机，主要想练习写程序嘛不是~</p>
+<p>灯珠选择了3颗亮度还不错的贴片LED，正白色，功率不高，0.25W左右（主要考虑发热，因为没有外壳，如果发热很高就没法握在手里了）</p>
+<p>使用三极管驱动，并没有用恒流驱动（成本有点高，体积也没法缩小）</p>
+<p>充电选择TP4056X，考虑到后期焊接电池，可能会造成电池反接等问题，所以使用TP4056X，自带防反接功能。</p>
+<p>充电指示灯仅仅使用了一个，充电时LED亮，停止充电就不亮，比较简洁。</p>
+<p>控制灯的开关使用一个微动开关，通过按键控制灯亮的模式（具体的效果通过程序即可制作）</p>
+<p>板子尽量缩小体积，并且美观度也需要优先考虑。</p>
+<hr>
+<h4 id="原理图绘制"><a href="#原理图绘制" class="headerlink" title="原理图绘制"></a>原理图绘制</h4><p>通过学习官方的芯片文档，可以了解芯片的所有信息。TP4056X的电路是参考官方的典型应用电路来设计的。<br><img src="/.com//2019-08-01A.png" alt="Datasheet中的参考电路"></p>
+<p>其中的Rprog是设定充电电流的电阻，公式是Rprog=1100/Ibat</p>
+<p>三个灯珠使用8050驱动</p>
+<p>两个芯片的滤波均使用一个10uf X5R（1210）及和104（0805）电容</p>
+<p>原理图见图：<img src="/.com//2019-08-03.png" alt="最终原理图(V1.3)"></p>
+<hr>
+<p>PCB及封装绘制见B篇<br>程序编写及实物调试见C篇</p>
+<hr>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>感谢您对我的肯定！<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/img/alipay.jpg">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -198,160 +247,106 @@
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/08/03/硬件实践02A-USB小手电制作/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/07/28/GIT学习01-VS2017内设置GIT/" class="archive-article-date">
-  	<time datetime="2019-07-28T14:04:20.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-07-28</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2019/07/28/GIT学习01-VS2017内设置GIT/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">GIT学习01-VS2017内设置GIT</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/07/28/GIT学习01-VS2017内设置GIT/">GIT学习01-VS2017内设置GIT</a>
-    </h1>
+  
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">git</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/07/27/Python人工智能学习笔记01-环境搭建/" class="archive-article-date">
-  	<time datetime="2019-07-27T06:05:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-07-27</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/07/27/Python人工智能学习笔记01-环境搭建/">Python人工智能学习笔记01-环境搭建</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">人工智能</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/07/27/Python人工智能实战01-居民收入分类模型训练/" class="archive-article-date">
-  	<time datetime="2019-07-27T03:09:48.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-07-27</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/07/27/Python人工智能实战01-居民收入分类模型训练/">Python人工智能实战01-居民收入分类模型训练</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">人工智能</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/07/26/hello-world/" class="archive-article-date">
-  	<time datetime="2019-07-26T14:29:38.941Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-07-26</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/07/26/hello-world/">Hello World</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-    
 
 
           </div>
@@ -376,8 +371,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,

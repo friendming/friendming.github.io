@@ -159,6 +159,99 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-硬件实践02A-USB小手电制作" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/08/03/硬件实践02A-USB小手电制作/">硬件实践02A-USB小手电制作</a>
+    </h1>
+  
+
+        
+        <a href="/2019/08/03/硬件实践02A-USB小手电制作/" class="archive-article-date">
+  	<time datetime="2019-08-03T04:54:20.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-03</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>手电是5月份开始制作的，到现在程序还没写（咕咕咕啊），所以写一篇博客，以此激励自己回头把程序写好。</p>
+<hr>
+<h4 id="前因"><a href="#前因" class="headerlink" title="前因"></a>前因</h4><p>其实纯粹是手痒，再是在于想练习练习AVR单片机程序的编写和PCB绘制。并且鉴于在学校不方便，所以也需要是一个小巧东西，所以就想做这个小手电（还可以送人~）</p>
+<hr>
+<h4 id="选型"><a href="#选型" class="headerlink" title="选型"></a>选型</h4><p>MCU选择的是ATtiny85,8脚的小单片机。其实是有现成手电控制芯片可以选择的，但是那样意义不大呀，所以还是选了单片机，主要想练习写程序嘛不是~</p>
+<p>灯珠选择了3颗亮度还不错的贴片LED，正白色，功率不高，0.25W左右（主要考虑发热，因为没有外壳，如果发热很高就没法握在手里了）</p>
+<p>使用三极管驱动，并没有用恒流驱动（成本有点高，体积也没法缩小）</p>
+<p>充电选择TP4056X，考虑到后期焊接电池，可能会造成电池反接等问题，所以使用TP4056X，自带防反接功能。</p>
+<p>充电指示灯仅仅使用了一个，充电时LED亮，停止充电就不亮，比较简洁。</p>
+<p>控制灯的开关使用一个微动开关，通过按键控制灯亮的模式（具体的效果通过程序即可制作）</p>
+<p>板子尽量缩小体积，并且美观度也需要优先考虑。</p>
+<hr>
+<h4 id="原理图绘制"><a href="#原理图绘制" class="headerlink" title="原理图绘制"></a>原理图绘制</h4><p>通过学习官方的芯片文档，可以了解芯片的所有信息。TP4056X的电路是参考官方的典型应用电路来设计的。<br><img src="/.com//2019-08-01A.png" alt="Datasheet中的参考电路"></p>
+<p>其中的Rprog是设定充电电流的电阻，公式是Rprog=1100/Ibat</p>
+<p>三个灯珠使用8050驱动</p>
+<p>两个芯片的滤波均使用一个10uf X5R（1210）及和104（0805）电容</p>
+<p>原理图见图：<img src="/.com//2019-08-03.png" alt="最终原理图(V1.3)"></p>
+<hr>
+<p>PCB及封装绘制见B篇<br>程序编写及实物调试见C篇</p>
+<hr>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">电路</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/08/03/硬件实践02A-USB小手电制作/">Read more >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-GIT学习01-VS2017内设置GIT" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -658,6 +751,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">git</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">电路</a>
               </li>
             
             <div class="clearfix"></div>
