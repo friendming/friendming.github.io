@@ -159,6 +159,88 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-Python疑难杂症01-Python3安装turtle库出现Error" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/08/31/Python疑难杂症01-Python3安装turtle库出现Error/">Python疑难杂症01-Python3安装turtle库出现Error</a>
+    </h1>
+  
+
+        
+        <a href="/2019/08/31/Python疑难杂症01-Python3安装turtle库出现Error/" class="archive-article-date">
+  	<time datetime="2019-08-31T13:28:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-31</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h4 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h4><p>今天用<code>pip install turtle</code>尝试为python3安装turtle库是时出现错误：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">Collecting turtle</span><br><span class="line">  Using cached https://files.pythonhosted.org/packages/ff/f0/<span class="number">21</span>a42e9e424d24bdd0e509d5ed3c7dfb8f47d962d9c044dba903b0b4a26f/turtle<span class="number">-0.0</span><span class="number">.2</span>.tar.gz</span><br><span class="line">    Complete output <span class="keyword">from</span> command python setup.py egg_info:</span><br><span class="line">    Traceback (most recent call last):</span><br><span class="line">      File <span class="string">"&lt;string&gt;"</span>, line <span class="number">1</span>, <span class="keyword">in</span> &lt;module&gt;</span><br><span class="line">      File <span class="string">"/tmp/pip-install-hpqxw6_s/turtle/setup.py"</span>, line <span class="number">40</span></span><br><span class="line">        <span class="keyword">except</span> ValueError, ve:</span><br><span class="line">                         ^</span><br><span class="line">    SyntaxError: invalid syntax</span><br><span class="line"></span><br><span class="line">    ----------------------------------------</span><br><span class="line">Command <span class="string">"python setup.py egg_info"</span> failed <span class="keyword">with</span> error code <span class="number">1</span> <span class="keyword">in</span> /tmp/pip-install-hpqxw6_s/turtle/</span><br></pre></td></tr></table></figure>
+
+<p>观察一下发现是代码中有语法错误。</p>
+<p><a href="https://files.pythonhosted.org/packages/ff/f0/21a42e9e424d24bdd0e509d5ed3c7dfb8f47d962d9c044dba903b0b4a26f/turtle-0.0.2.tar.gz" target="_blank" rel="noopener">点击这里下载turtle0.0.2</a><br>解压后，打开setup.py，将其中第40行修改成<br><code>except (ValueError, ve):</code></p>
+<blockquote>
+<p>这是因为原文件的写法是Python2的语法，在python3中应该使用括号。</p>
+</blockquote>
+<p>然后采用<code>pip install -e 你解压的文件路径</code>就解决了。</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">python3</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/08/31/Python疑难杂症01-Python3安装turtle库出现Error/">Read more >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-硬件实践02A-USB小手电制作" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -643,6 +725,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">人工智能</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">python3</a>
               </li>
              
               <li class="article-tag-list-item">
