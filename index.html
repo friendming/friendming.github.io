@@ -159,6 +159,103 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-Python学习笔记02-多行输入及空格、回车、Tab读取" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/09/01/Python学习笔记02-多行输入及空格、回车、Tab读取/">Python学习笔记02-多行输入及空格、回车、Tab个数统计</a>
+    </h1>
+  
+
+        
+        <a href="/2019/09/01/Python学习笔记02-多行输入及空格、回车、Tab读取/" class="archive-article-date">
+  	<time datetime="2019-09-01T09:41:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-01</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h5 id="题目要求"><a href="#题目要求" class="headerlink" title="题目要求"></a>题目要求</h5><ul>
+<li><p>统计输入中空格、制表符及回车符的个数</p>
+</li>
+<li><p>【问题描述】分别统计标准输入中空格、制表符及回车符的个数（输入以Ctrl-Z结束）。</p>
+</li>
+<li><p>【输入形式】从标准输入中读取字符，可以包含任意字符。输入以Ctrl-Z结束。</p>
+</li>
+<li><p>【输出形式】分别输出输入字符中空格，制表符和回车符的个数，相邻数字之间用一个空格区分，输出末尾没有空格。</p>
+</li>
+<li><p>【样例输入】C lanuage is very important.   HAHAHAHAHAA…..<br>HAHAHAHAHAH<br>HAHAHA</p>
+</li>
+<li><p>【样例输出】4 3 3</p>
+</li>
+<li><p>【样例说明】字符串中共有4个空格，3个制表符（注意在这里important后面的句点和HAHAHAHAHAA之间有3个制表符，但是在这里显示得并不明显。），以及3个回车，所以输出4 3 3</p>
+</li>
+<li><p>【评分标准】结果完全正确得25分，每个测试点5分。</p>
+</li>
+</ul>
+<hr>
+<h5 id="程序"><a href="#程序" class="headerlink" title="程序"></a>程序</h5><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> sys</span><br><span class="line">s = sys.stdin.readlines()</span><br><span class="line">num_space = <span class="number">0</span></span><br><span class="line">num_tab = <span class="number">0</span></span><br><span class="line">num_enter = <span class="number">0</span></span><br><span class="line"><span class="keyword">for</span> line <span class="keyword">in</span> s: <span class="comment">#行</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> line: <span class="comment">#每个字符</span></span><br><span class="line">        <span class="keyword">if</span> i == <span class="string">" "</span>:</span><br><span class="line">            num_space = num_space + <span class="number">1</span></span><br><span class="line">        <span class="keyword">elif</span> i == <span class="string">"\n"</span>:</span><br><span class="line">            num_enter = num_enter + <span class="number">1</span></span><br><span class="line">        <span class="keyword">elif</span> i == <span class="string">"\t"</span>:</span><br><span class="line">            num_tab = num_tab + <span class="number">1</span></span><br><span class="line">print(num_space, num_tab, num_enter)</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>使用<code>sys.stdin.readlines</code>函数的原因是标准的input函数只能读取单行的内容，导致回车符及之后的内容被忽略。</p>
+</blockquote>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Python</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/09/01/Python学习笔记02-多行输入及空格、回车、Tab读取/">Read more >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-Python疑难杂症01-Python3安装turtle库出现Error" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -720,11 +817,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">人工智能</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">git</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">人工智能</a>
+                <a href="javascript:void(0)" class="js-tag color2">Python</a>
               </li>
              
               <li class="article-tag-list-item">
